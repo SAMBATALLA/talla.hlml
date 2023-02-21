@@ -1,0 +1,81 @@
+ body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(23, 23, 111);
+    position:absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(-40, -40);
+}
+ form{
+    background-color: rgb(250, 249, 247);
+    padding: 30px;
+    border-radius: 10px;
+ }
+ form h1{
+    font-size: 20px;
+ }
+ form .separation{
+    width: 100%;
+    height: 1px;
+    background-color: rgb(51, 51, 215);
+ }
+ form .corps-formulaire{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+ }
+ form .corps-formulaire .groupe{
+    position: relative;
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+ }
+ form .corps-formulaire .gauche .groupe input{
+    margin-top: 5px;
+    padding: 10px 5px 10px 30px;
+    border: 1px solid #c9c9c9;
+    outline-color: #747cdf;
+    border-radius: 5px;
+ }
+ form .corps-formulaire .gauche .groupe i{
+   position:absolute;
+   left: 0;
+   top: 25px;
+   padding: 9px 8px;
+   color: blue;
+ }
+ form.corps-formulaire.droite{
+   margin-left: 40%;
+ }
+ form.corps-formulaire.droite.groupe{
+   height: 100%;
+ }
+ form.corps-formulaire.droite.groupe.groupe textarea{
+   margin-top: 5px;
+   padding: 10px;
+   background-color: aliceblue;
+   border: 2px solid #747cdf;
+   outline: none;
+   border-radius: 5px;
+   resize: none;
+   height: 72%;
+ }
+ form .pied-formulaire button{
+   margin-top: 10px;
+   background-color: #747cdf;
+   font-size: 15px;
+   border: none;
+   padding: 10px 20px;
+   border-radius: 5px;
+   outline: none;
+   cursor: pointer;
+ }
+ form .pied-formulaire button:hover{
+   transform: scale(1.05);
+ }
+ @media screen and(max-width:920px){
+   .corps-formulaire .droite{
+      margin-left: 0px;
+   }
+ }
